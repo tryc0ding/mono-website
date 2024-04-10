@@ -1,5 +1,31 @@
-# python
+# OSX #
+.DS_Store
+
+# Byte-compiled / optimized / DLL files #
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django #
+*.log
+db.sqlite3
+media
+
+# Virtual environment
 .venv
 
-# development environment
-.idea/
+# Docker
+.docker
+
+# PyCharm
+.idea
+
+# Environment
+.env
+.env.prod
+
+# pip-tools
+platform.egg-info/
+
+# pytest
+.pytest_cache/
