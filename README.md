@@ -6,7 +6,7 @@
 
 ```powershell
 py -m venv .venv
-.\venv\Scripts\activate.bat
+.\.venv\Scripts\activate.bat
 ```
 
 ### Requirements installieren
