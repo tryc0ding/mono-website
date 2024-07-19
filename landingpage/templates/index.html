@@ -11,6 +11,7 @@
     <!-- Bootstrap JS Bundle -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         html, body {
             height: 100%;
@@ -130,7 +131,7 @@
 <div id="spacer" class="spacer" style="height: 60px;"></div>
 
 <div class="container-lg my-5" style="background-color: rgba(158, 165, 210, 0.75)">
- <!--<p class="text-center font-bold fs-1" style="color: rgb(195, 0, 23)">Preise</p>--!>
+ <!--<p class="text-center font-bold fs-1" style="color: rgb(195, 0, 23)">Preise</p>-->
     <table class="table fs-3 table-layout: fixed; width: 100%;">
         <colgroup>
             <col style="width: 32%;">
@@ -147,9 +148,9 @@
         <tr>
             <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"></th>
             <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Erwachsene</th>
-            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Ermäßigt</th>
-            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Kinder</th>
-            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Familien</th>
+            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Schüler ab 12 Jahre; Azubis, Studierenden; BfDler; Soldaten; Erwerbslose; Menschen mit Behinderung; Senioren ab 60 Jahre. Nur in Verbindung mit gültigem Nachweis!">Ermäßigt<sup> 1</sup></span></th>
+            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Kinder von 4 - 11 Jahren">Kinder<sup> 2</sup></span></th>
+            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eltern mit eigenen Kindern">Familien<sup> 3</sup></span></th>
         </tr>
         </thead>
         <tbody>
@@ -161,15 +162,14 @@
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">28 €</td>
         </tr>
         <tr>
-            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Tageskarte-EarlyBird
-            </th>
+            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="right" title="Preise gelten werktags (außer Samstags) von 10 - 13 Uhr">Tageskarte-EarlyBird<sup> 4</sup></span></th>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">8 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">5 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">25 €</td>
         </tr>
         <tr>
-            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">11er-Karte</th>
+            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="right" title="11 Eintritte für den Preis von 10">11er-Karte<sup> 5</sup></span></th>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">115 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">100 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">70 €</td>
@@ -181,14 +181,14 @@
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">169 €</td>
         </tr>
         <tr>
-            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">1-Monatsabo</th>
+            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="right" title="Preis pro Monat!">1-Monatsabo<sup> 6</sup></span></th>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">70 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">64 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">36 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">150 €</td>
         </tr>
         <tr>
-            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">12-Monatsabo</th>
+            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="right" title="Preis pro Monat!">12-Monatsabo<sup> 6</sup></span></th>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">49 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">44 €</td>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">28 €</td>
@@ -210,11 +210,20 @@
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">3,50 €</td>
         </tr>
         <tr>
-            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Crashpad</th>
+            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none"><span data-bs-toggle="tooltip" data-bs-placement="right" title="Preis pro Tag!">Crashpad<sup> 7</sup></span></th>
             <td style="color: rgb(195, 0, 23); background: transparent; border: none">8 € pro Tag</td>
         </tr>
         </tbody>
     </table>
+
+    <span style="color: rgb(195, 0, 23)"><sup> 1</sup> Schüler ab 12 Jahre; Azubis, Studierenden; BfDler; Soldaten; Erwerbslose; Menschen mit Behinderung; Senioren ab 60 Jahre. Nur in Verbindung mit gültigem Nachweis!</span><br>
+    <span style="color: rgb(195, 0, 23)"><sup> 2</sup> Kinder von 4 - 11 Jahren. Kinder bis 3 Jahre zahlen keinen Eintritt.</span><br>
+    <span style="color: rgb(195, 0, 23)"><sup> 3</sup> Eltern mit eigenen Kindern.</span><br>
+    <span style="color: rgb(195, 0, 23)"><sup> 4</sup> Preise gelten werktags (außer Samstags) von 10 bis 13 Uhr.</span><br>
+    <span style="color: rgb(195, 0, 23)"><sup> 5</sup> 11 Eintritte für den Preis von 10.</span><br>
+    <span style="color: rgb(195, 0, 23)"><sup> 6</sup> Preis pro Monat.</span><br>
+    <span style="color: rgb(195, 0, 23)"><sup> 7</sup> Preis pro Tag.</span><br>
+    <span> </span><br>
 </div>
 
 <div class="container-lg my-5" style="background-color: rgba(227, 184, 214, 0.75)">
@@ -228,6 +237,15 @@
 <div class="container-lg my-5" style="background-color: rgba(158, 165, 210, 0.75)">
     <p class="text-center font-bold fs-1" style="color: rgb(195, 0, 23)">Infos</p>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    });
+</script>
 
 </body>
 </html>
