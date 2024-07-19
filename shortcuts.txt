@@ -1,0 +1,14 @@
+# Chrome
+
+Strg + Shift + C = Open Chrome DevTools Inspector
+Strg + Shift + J = Open Chrome DevTools Console
+Strg + Shift + D = Change DevTools Orientation (bottom / right)
+
+# PyCharm
+
+## HTML
+Alt + Enter on HTML tag to remove and preserve children 💡
+
+## General
+
+
