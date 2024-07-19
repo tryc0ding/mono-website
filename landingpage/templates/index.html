@@ -19,21 +19,16 @@
             padding: 0;
         }
 
-        body {
+        .font-oswald {
             font-family: 'Oswald', sans-serif !important;
         }
 
-        .background-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+        .bg-climbing {
             background-image: url('https://i.ibb.co/25r1qMJ/bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .content-wrapper {
@@ -84,8 +79,7 @@
     </style>
 </head>
 
-<body>
-<div class="background-container"></div>
+<body class="font-oswald bg-climbing">
 <div class="container">
     <nav class="navbar navbar-expand-lg top-0 start-50 translate-middle-x">
         <div class="container">
