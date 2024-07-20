@@ -21,23 +21,49 @@ html, body {
     position: relative;
     z-index: 1;
 }
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(158, 165, 210, 0);
+    backdrop-filter: blur(0px);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.navbar.scrolled::before {
+    background-color: rgba(205, 205, 205, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
 
 .nav-link,
 .navbar-nav .dropdown-toggle {
   color: rgb(195, 0, 23) !important;
-  font-size: 1.75vw;
+  font-weight: bold;
+  font-size: 2rem;
   position: relative;
 }
 
 .navbar-brand {
   color: rgb(195, 0, 23) !important;
   font-weight: bold;
-  font-size: 1.75vw;
+  font-size: 2rem;
 }
 
 .nav-link_active {
   color: rgb(195, 0, 23) !important;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 .navbar-nav .nav-link::before,
@@ -54,8 +80,8 @@ html, body {
 
 .navbar-nav .nav-link:hover::before,
 .navbar-nav .dropdown-toggle:hover::before {
-   width: 80%;
-   left: 10%;
+   width: calc(100% - 20px);
+   left: 10px;
 }
 
 .dropdown-toggle.no-caret::after {
