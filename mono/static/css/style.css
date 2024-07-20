@@ -97,7 +97,27 @@ html, body {
   transition: border-color 1s, box-shadow 0.6s;
 }
 
+.mainbox{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35)
+}
+
 .map {
   border-radius: 0.375rem;
   overflow: hidden;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-link {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.footer-link:hover {
+    color: rgb(195, 0, 23);
 }
