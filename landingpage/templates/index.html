@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body class="font-oswald bg-climbing">
+<body class="font-oswald bg-climbing" style="padding-top: 99.31px;">
 <div class="container fs-1">
     <nav class="navbar navbar-expand-lg fixed-top bg-climbing">
         <div class="container">
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Preise</a>
+                            <a class="nav-link" href="#">Zeiten & Preise</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Kurse</a>
@@ -59,7 +59,32 @@
 </div>
 
 <div class="class container-fluid" style="background-color: rgba(158, 165, 210, 0.8)">
-    <div class="container-lg my-5">
+    <div class="container-lg" style="padding-top: 5px;">
+        <table class="table fs-3 table-layout: fixed; width: 100%;">
+            <colgroup>
+                <col style="width: 35%;">
+                <col style="width: 65%;">
+
+            </colgroup>
+            <tr>
+                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
+                    <span class="bg-dark text-center fs-1"><b>&nbsp;ÖFFNUNGSZEITEN&nbsp;</b></span></th>
+            </tr>
+            <tr>
+                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Montag bis
+                    Freitag
+                </th>
+                <td scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">10 bis 23 Uhr
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Samstag, Sonntag &
+                    an Feiertagen
+                </th>
+                <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 bis 22 Uhr</td>
+            </tr>
+        </table>
+
         <!--<p class="text-center font-bold fs-1" style="color: rgb(195, 0, 23)">Preise</p>-->
         <span> </span><br>
         <table class="table fs-3 table-layout: fixed; width: 100%;">
@@ -166,27 +191,170 @@
 </div>
 
 <div class="class container-fluid" style="background-color: rgba(227, 184, 214, 0.8)">
-    <div class="container-lg my-5">
-        <table>
+    <div class="container-lg my-5" style="padding-top: 5px; padding-bottom: 10px">
+        <table class="table fs-3 table-layout: fixed; width: 100%;">
+            <colgroup>
+                <col style="width: 100%;">
+
+            </colgroup>
             <tr>
-                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none"><span
-                        class="bg-dark text-center fs-1"><b>&nbsp;KURSE&nbsp;</b></span></th>
+                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
+                    <span class="bg-dark text-center fs-1"><b>&nbsp;KURSE&nbsp;</b></span></th>
             </tr>
         </table>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card h-100" style="background: transparent; border:none">
+                        <div class="card-body" style="color: rgb(195, 0, 23)">
+                            <table>
+                                <tr>
+                                    <th scope="col"
+                                        style="color: rgb(209, 209, 209); background: transparent; border: none"><span
+                                            class="bg-dark text-center fs-2"><b>&nbsp;Schnupperkurs&nbsp;</b></span>
+                                    </th>
+                                </tr>
+                            </table>
+                            <p class="card-text fs-4">Für all die, die zum ersten Mal Bouldern oder gerade erst unseren
+                                Sport für
+                                sich entdeckt haben.</p>
+                                                        <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100" style="background: transparent; border:none">
+                        <div class="card-body" style="color: rgb(195, 0, 23)">
+                            <table>
+                                <tr>
+                                    <th scope="col"
+                                        style="color: rgb(209, 209, 209); background: transparent; border: none"><span
+                                            class="bg-dark text-center fs-2"><b>&nbsp;Grundkurs Bouldern&nbsp;</b></span>
+                                    </th>
+                                </tr>
+                            </table>
+                            <p class="card-text fs-4">Lerne mit Anderen zusammen, über drei Termine, die Grundtechniken
+                                des Boulderns.</p>
+                                                        <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100" style="background: transparent; border:none">
+                        <div class="card-body" style="color: rgb(195, 0, 23)">
+                            <table>
+                                <tr>
+                                    <th scope="col"
+                                        style="color: rgb(209, 209, 209); background: transparent; border: none"><span
+                                            class="bg-dark text-center fs-2"><b>&nbsp;Indiviuelles Coaching&nbsp;</b></span>
+                                    </th>
+                                </tr>
+                            </table>
+                            <p class="card-text fs-4">Deine individuelle Trainingsstunde, damit unsere Trainer:innen zu
+                                100%
+                                auf deine Fragen und Wünsche rund ums Bouldern eingehen können.</p>
+                                                        <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 gy-4">
+                    <div class="card h-100" style="background: transparent; border:none">
+                        <div class="card-body" style="color: rgb(195, 0, 23)">
+                            <table>
+                                <tr>
+                                    <th scope="col"
+                                        style="color: rgb(209, 209, 209); background: transparent; border: none"><span
+                                            class="bg-dark text-center fs-2"><b>&nbsp;Next-Level "Rot zu Blau"&nbsp;</b></span>
+                                    </th>
+                                </tr>
+                            </table>
+                            <p class="card-text fs-4">Hier bekommst du Tipps und Tricks, um den Sprung vom Level 3
+                                (rot) auf Level 4 (blau) zu meistern.</p>
+                                                        <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 gy-4">
+                    <div class="card h-100" style="background: transparent; border:none">
+                        <div class="card-body" style="color: rgb(195, 0, 23)">
+                            <table>
+                                <tr>
+                                    <th scope="col"
+                                        style="color: rgb(209, 209, 209); background: transparent; border: none"><span
+                                            class="bg-dark text-center fs-2"><b>&nbsp;Next-Level "Blau zu Rot"&nbsp;</b></span>
+                                    </th>
+                                </tr>
+                            </table>
+                            <p class="card-text fs-4">Hier bekommst du Tipps und Tricks, um den Sprung vom Level 4
+                                (Blau) auf Level 5 (Gelb) zu meistern.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 gy-4">
+                    <div class="card h-100" style="background: transparent; border:none">
+                        <div class="card-body" style="color: rgb(195, 0, 23)">
+                            <table>
+                                <tr>
+                                    <th scope="col"
+                                        style="color: rgb(209, 209, 209); background: transparent; border: none"><span
+                                            class="bg-dark text-center fs-2"><b>&nbsp;Sommer-Bouldercamp"&nbsp;</b></span>
+                                    </th>
+                                </tr>
+                            </table>
+                            <p class="card-text fs-4">Einwöchiger Kletterkurs für Kids von 6 bis 12 Jahren.</p>
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+</div>
+
 
 <div class="class container-fluid" style="background-color: rgba(161, 200, 196, 0.8)">
-    <div class="container-lg my-5">
-        <table>
+    <div class="container-lg my-5" style="padding-top: 5px; padding-bottom: 10px">
+        <table class="table fs-3 table-layout: fixed; width: 100%;">
+            <colgroup>
+                <col style="width: 15%;">
+                <col style="width: 85%;">
+
+            </colgroup>
             <tr>
-                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none"><span
-                        class="bg-dark text-center fs-1"><b>&nbsp;ANFAHRT&nbsp;</b></span></th>
+                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
+                    <span class="bg-dark text-center fs-1"><b>&nbsp;KONTAKT&nbsp;</b></span></th>
+            </tr>
+            <tr>
+                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Adresse:
+                </th>
+                <td scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Eulerstraße 2,
+                    48151 Münster
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Telefon:
+                </th>
+                <td style="color: rgb(195, 0, 23); background: transparent; border: none">+49 (0)251 - 74747655</td>
+            </tr>
+            <tr>
+                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Mail:
+                </th>
+                <td style="color: rgb(195, 0, 23); background: transparent; border: none">
+                    info@monolith-boulderhalle.de
+                </td>
             </tr>
         </table>
         <div class="ratio ratio-16x9">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4919.587413783455!2d7.640179077582587!3d51.93771627917553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9a4d4277f196b%3A0x32145988f70ed1c2!2sMonolith%20Boulderhalle%20M%C3%BCnster!5e0!3m2!1sde!2sde!4v1721424560722!5m2!1sde!2sde"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="50%"></iframe>
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="50%"></iframe>
         </div>
     </div>
 </div>
