@@ -12,6 +12,10 @@ html {
     font-family: 'Oswald', sans-serif !important;
 }
 
+.monored {
+    color: (195, 0, 23);
+}
+
 .bg-climbing {
     background-image: url('https://i.ibb.co/25r1qMJ/bg.jpg');
     background-size: cover;

@@ -23,5 +23,6 @@ from landingpage import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="index")
+    path('', views.index, name="index"),
+    path('landingpage/templates/impressum.html', views.impressum, name="impressum"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
