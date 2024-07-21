@@ -106,7 +106,8 @@ html {
 }
 
 .mainbox{
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35)
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    scroll-margin; 80px;
 }
 
 .map {
