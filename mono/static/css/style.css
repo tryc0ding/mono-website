@@ -1,3 +1,7 @@
+:root {
+    --navbar-height: 6vh;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,13 +22,9 @@ html {
     background-attachment: fixed;
 }
 
-.content-wrapper {
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
-}
 .navbar {
     transition: all 0.3s ease;
+    height: var(--navbar-height);
 }
 
 .navbar::before {
@@ -66,6 +66,8 @@ html {
 
 .navbar-logo {
     align-items: center;
+    height: calc(0.5 * var(--navbar-height));
+    weight: calc(0.5 *var (--navbar-height));
 }
 
 .nav-link_active {
@@ -106,14 +108,19 @@ html {
 
 .mainbox{
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.75);
-    height: calc(100% + 80px);
-    padding-top: 80px
+    width: 100%;
+    min-height: 100%;
+    padding-top:  calc(var(--navbar-height));
 }
 
 .lastbox{
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.75);
-    height: calc(95% + 80px);
-    padding-top: 80px
+    min-height: 95%;
+    padding-top: calc(var(--navbar-height));
+}
+
+.footerbox{
+    min-height: 5%;
 }
 
 .contact-link {
