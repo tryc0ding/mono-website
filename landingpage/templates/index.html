@@ -1,5 +1,5 @@
 {% load static %}
-<html lang="de" xmlns="http://www.w3.org/1999/html">
+<html lang="de" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -19,17 +19,17 @@
 <div class="container fs-2">
     <nav class="navbar navbar-expand-lg fixed-top fs-2">
         <div class="container fs-2">
-            <div>
-                <a class="navbar-brand" href="#">
-                    MONOLITH
-                </a>
-                <a href="https://www.instagram.com/monolith_muenster/"><img
-                        src="{% static 'img/logo_instagram_monored.svg' %}"
-                        alt="triangle with all three sides equal"
-                        height="35px"
-                        width="35px"/></a>
+            <a class="navbar-logo" href="https://www.instagram.com/monolith_muenster/">
+                <img src="{% static 'img/logo_instagram_monored.svg' %}"
+                     alt="triangle with all three sides equal"
+                     height="40"
+                     width="40"/>
+            </a>
 
-            </div>
+            <a class="navbar-brand" href="#">
+                MONOLITH
+            </a>
+
 
             <div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -70,6 +70,17 @@
 <div id="time-and-prices" class="class container-fluid mainbox" style="background-color: rgba(158, 165, 210, 0.8)">
     <div class="container-lg">
 
+        <table class="table fs-3 table-layout: fixed; width: 100%;">
+            <colgroup>
+                <col style="width: 100%;">
+
+            </colgroup>
+            <tr>
+                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
+                    <span class="bg-dark text-center fs-1"><b>&nbsp;ZEITEN & PREISE&nbsp;</b></span></th>
+            </tr>
+        </table>
+
         <div class="col-12 my-3">
             <div class="card" style="background: transparent; border:none">
                 <div class="card-body" style="color: rgb(195, 0, 23)">
@@ -82,7 +93,7 @@
                         </colgroup>
                         <tr>
                             <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
-                                <span class="bg-dark text-center fs-1"><b>&nbsp;Öffnungszeiten&nbsp;</b></span></th>
+                                <span class="bg-dark text-center fs-2"><b>&nbsp;Öffnungszeiten&nbsp;</b></span></th>
                         </tr>
                         <tr>
                             <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Montag
@@ -121,7 +132,7 @@
                         <thead>
                         <tr>
                             <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
-                                <span class="bg-dark text-center fs-1"><b>&nbsp;Eintritte&nbsp;</b></span></th>
+                                <span class="bg-dark text-center fs-2"><b>&nbsp;Eintritte&nbsp;</b></span></th>
                         </tr>
                         <tr>
                             <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"></th>
@@ -211,7 +222,7 @@
                         <thead>
                         <tr>
                             <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
-                                <span class="bg-dark text-center fs-1"><b>&nbsp;Verleih&nbsp;</b></span></th>
+                                <span class="bg-dark text-center fs-2"><b>&nbsp;Verleih&nbsp;</b></span></th>
                         </tr>
                         </thead>
                         <tbody>

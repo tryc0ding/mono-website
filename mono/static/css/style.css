@@ -61,6 +61,11 @@ html {
   color: rgb(195, 0, 23) !important;
   font-weight: bold;
   font-size: 2rem;
+  align-items: center;
+}
+
+.navbar-logo {
+    align-items: center;
 }
 
 .nav-link_active {
