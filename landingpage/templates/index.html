@@ -19,13 +19,17 @@
 <div class="container fs-2">
     <nav class="navbar navbar-expand-lg fixed-top fs-2">
         <div class="container fs-2">
-            <a class="navbar-brand" href="#">
-                MONOLITH
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon align-top"></span>
-            </button>
+            <div>
+                <a class="navbar-brand" href="#">
+                    MONOLITH
+                </a>
+                <a href="https://www.instagram.com/monolith_muenster/"><img
+                        src="{% static 'img/logo_instagram_monored.svg' %}"
+                        alt="triangle with all three sides equal"
+                        height="35px"
+                        width="35px"/></a>
+
+            </div>
 
             <div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -44,6 +48,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Kontakt</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -64,133 +69,188 @@
 
 <div id="time-and-prices" class="class container-fluid mainbox" style="background-color: rgba(158, 165, 210, 0.8)">
     <div class="container-lg">
-        <table class="table fs-3 table-layout: fixed; width: 100%;">
-            <colgroup>
-                <col style="width: 35%;">
-                <col style="width: 65%;">
 
-            </colgroup>
-            <tr>
-                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
-                    <span class="bg-dark text-center fs-1"><b>&nbsp;ÖFFNUNGSZEITEN&nbsp;</b></span></th>
-            </tr>
-            <tr>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Montag bis
-                    Freitag
-                </th>
-                <td scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">10 bis 23 Uhr
-                </td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Samstag, Sonntag &
-                    an Feiertagen
-                </th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 bis 22 Uhr</td>
-            </tr>
-        </table>
+        <div class="col-12 my-3">
+            <div class="card" style="background: transparent; border:none">
+                <div class="card-body" style="color: rgb(195, 0, 23)">
 
-        <!--<p class="text-center font-bold fs-1" style="color: rgb(195, 0, 23)">Preise</p>-->
-        <span> </span><br>
-        <table class="table fs-3 table-layout: fixed; width: 100%;">
-            <colgroup>
-                <col style="width: 32%;">
-                <col style="width: 17%;">
-                <col style="width: 17%;">
-                <col style="width: 17%;">
-                <col style="width: 17%;">
-            </colgroup>
-            <thead>
-            <tr>
-                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
-                    <span class="bg-dark text-center fs-1"><b>&nbsp;EINTRITTE&nbsp;</b></span></th>
-            </tr>
-            <tr>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"></th>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Erwachsene</th>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Ermäßigt<sup>
-                    1</sup></th>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Kinder<sup>
-                    2</sup></th>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Familien<sup>
-                    3</sup></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Tageskarte</th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">11,50 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">7 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">28 €</td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
-                    Tageskarte-EarlyBird<sup> 4</sup></th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">8 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">5 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">25 €</td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">11er-Karte<sup>
-                    5</sup></th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">115 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">100 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">70 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">280 €</td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">3-Monatskarte</th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">189 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">169 €</td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">1-Monatsabo<sup>
-                    6</sup></th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">70 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">64 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">36 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">150 €</td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">12-Monatsabo<sup>
-                    6</sup></th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">49 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">44 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">28 €</td>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">100 €</td>
-            </tr>
-            <tr>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"></th>
-            </tr>
-            <tr>
-                <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
-                    <span class="bg-dark text-center fs-1"><b>&nbsp;VERLEIH&nbsp;</b></span></th>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Chalk</th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">2 €</td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Schuhe</th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">3,50 €</td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Crashpad<sup>
-                    7</sup></th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">8 €</td>
-            </tr>
-            </tbody>
-        </table>
+                    <table class="table fs-3 table-layout: fixed; width: 100%;">
+                        <colgroup>
+                            <col style="width: 35%;">
+                            <col style="width: 65%;">
 
-        <span style="color: rgb(195, 0, 23)"><sup> 1</sup> Schüler ab 12 Jahre; Azubildende; Studierende; BfDler; Angehörige der Bundeswehr, Polizei & Feuerwehr; Erwerbslose; Menschen mit Behinderung; Senioren ab 60 Jahre. Nur in Verbindung mit gültigem Nachweis!</span><br>
-        <span style="color: rgb(195, 0, 23)"><sup> 2</sup> Kinder von 4 bis 11 Jahren. Kinder bis 3 Jahre zahlen keinen Eintritt.</span><br>
-        <span style="color: rgb(195, 0, 23)"><sup> 3</sup> Eltern mit eigenen Kindern.</span><br>
-        <span style="color: rgb(195, 0, 23)"><sup> 4</sup> Preise gelten werktags (außer Samstags) von 10 bis 13 Uhr.</span><br>
-        <span style="color: rgb(195, 0, 23)"><sup> 5</sup> 11 Eintritte für den Preis von 10.</span><br>
-        <span style="color: rgb(195, 0, 23)"><sup> 6</sup> Preis pro Monat.</span><br>
-        <span style="color: rgb(195, 0, 23)"><sup> 7</sup> Preis pro Tag.</span><br>
-        <span> </span><br>
+                        </colgroup>
+                        <tr>
+                            <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
+                                <span class="bg-dark text-center fs-1"><b>&nbsp;Öffnungszeiten&nbsp;</b></span></th>
+                        </tr>
+                        <tr>
+                            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Montag
+                                bis
+                                Freitag
+                            </th>
+                            <td scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">10 bis
+                                23 Uhr
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Samstag, Sonntag &
+                                an Feiertagen
+                            </th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 bis 22 Uhr</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 my-3">
+            <div class="card" style="background: transparent; border:none">
+                <div class="card-body" style="color: rgb(195, 0, 23)">
+
+                    <table class="table fs-3 table-layout: fixed; width: 100%;">
+                        <colgroup>
+                            <col style="width: 32%;">
+                            <col style="width: 17%;">
+                            <col style="width: 17%;">
+                            <col style="width: 17%;">
+                            <col style="width: 17%;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
+                                <span class="bg-dark text-center fs-1"><b>&nbsp;Eintritte&nbsp;</b></span></th>
+                        </tr>
+                        <tr>
+                            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none"></th>
+                            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Erwachsene
+                            </th>
+                            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Ermäßigt<sup>
+                                1</sup></th>
+                            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Kinder<sup>
+                                2</sup></th>
+                            <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Familien<sup>
+                                3</sup></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Tageskarte
+                            </th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">11,50 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">7 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">28 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Tageskarte-EarlyBird<sup> 4</sup></th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">10 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">8 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">5 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">25 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                11er-Karte<sup>
+                                5</sup></th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">115 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">100 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">70 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">280 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                3-Monatskarte
+                            </th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">189 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">169 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                1-Monatsabo<sup>
+                                6</sup></th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">70 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">64 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">36 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">150 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                12-Monatsabo<sup>
+                                6</sup></th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">49 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">44 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">28 €</td>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">100 €</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 my-3">
+            <div class="card" style="background: transparent; border:none">
+                <div class="card-body" style="color: rgb(195, 0, 23)">
+
+                    <table class="table fs-3 table-layout: fixed; width: 100%;">
+                        <colgroup>
+                            <col style="width: 32%;">
+                            <col style="width: 17%;">
+                            <col style="width: 17%;">
+                            <col style="width: 17%;">
+                            <col style="width: 17%;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
+                                <span class="bg-dark text-center fs-1"><b>&nbsp;Verleih&nbsp;</b></span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Chalk
+                            </th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">2 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Schuhe
+                            </th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">3,50 €</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Crashpad<sup>
+                                7</sup></th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">8 €</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <span style="color: rgb(195, 0, 23)"><sup> 1</sup> Schüler ab 12 Jahre; Azubildende; Studierende; BfDler; Angehörige der Bundeswehr, Polizei & Feuerwehr; Erwerbslose; Menschen mit Behinderung; Senioren ab 60 Jahre. Nur in Verbindung mit gültigem Nachweis!</span>
+                <span style="color: rgb(195, 0, 23)"><sup> 2</sup> Kinder von 4 bis 11 Jahren. Kinder bis 3 Jahre zahlen keinen Eintritt.</span>
+                <span style="color: rgb(195, 0, 23)"><sup> 3</sup> Eltern mit eigenen Kindern.</span>
+                <span style="color: rgb(195, 0, 23)"><sup> 4</sup> Preise gelten werktags (außer Samstags) von 10 bis 13 Uhr.</span>
+                <span style="color: rgb(195, 0, 23)"><sup> 5</sup> 11 Eintritte für den Preis von 10.</span>
+                <span style="color: rgb(195, 0, 23)"><sup> 6</sup> Preis pro Monat.</span>
+                <span style="color: rgb(195, 0, 23)"><sup> 7</sup> Preis pro Tag.</span>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -220,12 +280,17 @@
                             </th>
                         </tr>
                     </table>
-                    <p class="card-text fs-3">Komm einfach vorbei! Da beim Bouldern keine besondere Ausrüstung, sei es
-                        Klettergurt, Seil oder Sicherungsgerät, erforderlich ist, reichen schon bequeme Sportklamotten
+                    <p class="card-text fs-3">Komm einfach vorbei! Da beim Bouldern keine besondere
+                        Ausrüstung, sei es
+                        Klettergurt, Seil oder Sicherungsgerät, erforderlich ist, reichen schon bequeme
+                        Sportklamotten
                         und ein
-                        sauberes Paar Turnschuhe für deinen ersten Besuch aus. Solltest du jedoch das Bouldern mit
-                        Kletternschuhen ausprobieren wollen, kannst du dir bei uns auch passende Schuhe leihen.<br><br>
-                        Solltest du noch nicht volljährig sein, beachte bitte die nachfolgenden Hinweise!</p>
+                        sauberes Paar Turnschuhe für deinen ersten Besuch aus. Solltest du jedoch das
+                        Bouldern mit
+                        Kletternschuhen ausprobieren wollen, kannst du dir bei uns auch passende Schuhe
+                        leihen.<br><br>
+                        Solltest du noch nicht volljährig sein, beachte bitte die nachfolgenden Hinweise!
+                    </p>
                 </div>
             </div>
         </div>
@@ -241,10 +306,13 @@
                             </th>
                         </tr>
                     </table>
-                    <p class="card-text fs-3">Unter 14-jährige Kinder dürfen bei uns nur mit einer volljährigen
+                    <p class="card-text fs-3">Unter 14-jährige Kinder dürfen bei uns nur mit einer
+                        volljährigen
                         Begleitperson
-                        bouldern gehen, Vorraussetzung ist das Vorliegen des Einverständnis einer erziehungsberechtigen
-                        Person. Der Betreuungsschlüssel liegt hier bei 1:1 <b>(eine volljährige Person darf maximal
+                        bouldern gehen, Vorraussetzung ist das Vorliegen des Einverständnis einer
+                        erziehungsberechtigen
+                        Person. Der Betreuungsschlüssel liegt hier bei 1:1 <b>(eine volljährige Person darf
+                            maximal
                             ein unter 14-jähriges Kind beaufsichtigen!)</b></p>
                 </div>
             </div>
@@ -262,7 +330,8 @@
                         </tr>
                     </table>
                     <p class="card-text fs-3"><b>Bei Vorliegen eines schriftlichen Einverständnises einer
-                        erziehungsberechtigen Person</b>, können Minderjährige ab 14 Jahren ohne die Begleitung einer
+                        erziehungsberechtigen Person</b>, können Minderjährige ab 14 Jahren ohne die
+                        Begleitung einer
                         volljährigen Person zum Bouldern kommen.</p>
                 </div>
             </div>
@@ -279,9 +348,13 @@
                             </th>
                         </tr>
                     </table>
-                    <p class="card-text fs-3">Du Lust auf das Bouldern draußen am Fels, willst dir aber kein eigenes
-                        Crashpad kaufen? Für genau solche Gelegenheiten kannst du dir bei uns vor Ort Crashpads leihen.
-                        Kläre vorher am besten telefonisch ab, ob im gewünschten Zeitraum Crashpads zum Leihen zur
+                    <p class="card-text fs-3">Du hast Lust auf das Bouldern draußen am Fels, willst dir aber
+                        kein
+                        eigenes
+                        Crashpad kaufen? Für genau solche Gelegenheiten kannst du dir bei uns vor Ort
+                        Crashpads leihen.
+                        Kläre vorher am besten telefonisch ab, ob im gewünschten Zeitraum Crashpads zum
+                        Leihen zur
                         Verfügung stehen.
                     </p>
                 </div>
@@ -318,12 +391,14 @@
                                     </th>
                                 </tr>
                             </table>
-                            <p class="card-text fs-3">Für all die, die zum ersten Mal Bouldern oder gerade erst unseren
+                            <p class="card-text fs-3">Für all die, die zum ersten Mal Bouldern oder gerade
+                                erst unseren
                                 Sport für
                                 sich entdeckt haben.</p>
                             <a href="#" class="stretched-link"></a>
                         </div>
-                        <div class="card-footer" style="background: transparent; border:none; color: rgb(195, 0, 23)">
+                        <div class="card-footer"
+                             style="background: transparent; border:none; color: rgb(195, 0, 23)">
                             <p class="card-text fs-3"><b>24 € pro Person</b></p>
                         </div>
                     </div>
@@ -339,11 +414,13 @@
                                     </th>
                                 </tr>
                             </table>
-                            <p class="card-text fs-3">Lerne mit Anderen zusammen, über drei Termine, die Grundtechniken
+                            <p class="card-text fs-3">Lerne mit Anderen zusammen, über drei Termine, die
+                                Grundtechniken
                                 des Boulderns.</p>
                             <a href="#" class="stretched-link"></a>
                         </div>
-                        <div class="card-footer" style="background: transparent; border:none; color: rgb(195, 0, 23)">
+                        <div class="card-footer"
+                             style="background: transparent; border:none; color: rgb(195, 0, 23)">
                             <p class="card-text fs-3"><b>70 € pro Person</b></p>
                         </div>
                     </div>
@@ -359,7 +436,8 @@
                                     </th>
                                 </tr>
                             </table>
-                            <p class="card-text fs-3">Deine individuelle Trainingsstunde, damit unsere Trainer:innen zu
+                            <p class="card-text fs-3">Deine individuelle Trainingsstunde, damit unsere
+                                Trainer:innen zu
                                 100%
                                 auf deine Fragen und Wünsche rund ums Bouldern eingehen können.</p>
                             <a href="#" class="stretched-link"></a>
@@ -384,7 +462,8 @@
                                     </th>
                                 </tr>
                             </table>
-                            <p class="card-text fs-3">Hier bekommst du Tipps und Tricks, um den Sprung vom Level 3
+                            <p class="card-text fs-3">Hier bekommst du Tipps und Tricks, um den Sprung vom
+                                Level 3
                                 (Rot) auf Level 4 (Blau) zu meistern.</p>
                             <a href="#" class="stretched-link"></a>
                         </div>
@@ -402,11 +481,12 @@
                                 <tr>
                                     <th scope="col"
                                         style="color: rgb(209, 209, 209); background: transparent; border: none"><span
-                                            class="bg-dark text-center fs-2"><b>&nbsp;Next-Level "Blau zu Rot"&nbsp;</b></span>
+                                            class="bg-dark text-center fs-2"><b>&nbsp;Next-Level "Blau zu Gelb"&nbsp;</b></span>
                                     </th>
                                 </tr>
                             </table>
-                            <p class="card-text fs-3">Hier bekommst du Tipps und Tricks, um den Sprung vom Level 4
+                            <p class="card-text fs-3">Hier bekommst du Tipps und Tricks, um den Sprung vom
+                                Level 4
                                 (Blau) auf Level 5 (Gelb) zu meistern.</p>
                             <a href="#" class="stretched-link"></a>
                         </div>
@@ -428,7 +508,8 @@
                                     </th>
                                 </tr>
                             </table>
-                            <p class="card-text fs-3">Einwöchiger Kletterkurs für Kinder von 6 bis 12 Jahren.</p>
+                            <p class="card-text fs-3">Einwöchiger Kletterkurs für Kinder von 6 bis 12
+                                Jahren.</p>
                             <a href="#" class="stretched-link"></a>
                         </div>
                         <div class="card-footer"
@@ -455,47 +536,74 @@
             </tr>
         </table>
 
-        {% include 'voucher-widget.html' %}
+        <div class="card" style="background: transparent; border:none">
+            <div class="card-body opacity-75">
+                {% include 'voucher-widget.html' %}
+            </div>
+        </div>
     </div>
 
 
 </div>
 
-<div id="contact" class="class container-fluid mainbox" style="background-color: rgba(227, 184, 214, 0.8)">
+<div id="contact" class="class container-fluid lastbox" style="background-color: rgba(227, 184, 214, 0.8)">
     <div class="container-lg">
+
         <table class="table fs-3 table-layout: fixed; width: 100%;">
             <colgroup>
-                <col style="width: 15%;">
-                <col style="width: 85%;">
+                <col style="width: 100%;">
 
             </colgroup>
             <tr>
                 <th scope="col" style="color: rgb(209, 209, 209); background: transparent; border: none">
                     <span class="bg-dark text-center fs-1"><b>&nbsp;KONTAKT&nbsp;</b></span></th>
             </tr>
-            <tr>
-                <th scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">Adresse:
-                </th>
-                <td scope="col" style="color: rgb(195, 0, 23); background: transparent; border: none">
-                    Eulerstraße 2,
-                    48151 Münster
-                </td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Telefon:
-                </th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">+49 (0)251 -
-                    74 74 76 55
-                </td>
-            </tr>
-            <tr>
-                <th scope="row" style="color: rgb(195, 0, 23); background: transparent; border: none">Mail:
-                </th>
-                <td style="color: rgb(195, 0, 23); background: transparent; border: none">
-                    info@monolith-boulderhalle.de
-                </td>
-            </tr>
         </table>
+
+
+        <div class="col-12 my-4">
+            <div class="card" style="background: transparent; border:none">
+                <div class="card-body" style="color: rgb(195, 0, 23)">
+
+                    <table class="table fs-3 table-layout: fixed; width: 100%;">
+                        <colgroup>
+                            <col style="width: 15%;">
+                            <col style="width: 85%;">
+
+                        </colgroup>
+                        <tr>
+                            <th scope="col"
+                                style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Adresse:
+                            </th>
+                            <td scope="col"
+                                style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Eulerstraße 2,
+                                48151 Münster
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"
+                                style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                Telefon:
+                            </th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                <a class="contact-link" href="tel:+4925174747655">+49 (0)251 - 74 74 76 55</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"
+                                style="color: rgb(195, 0, 23); background: transparent; border: none">Mail:
+                            </th>
+                            <td style="color: rgb(195, 0, 23); background: transparent; border: none">
+                                <a class="contact-link" href="mailto:info@monolith-boulderhalle.de">info@monolith-boulderhalle.de</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
 
         <div class="card" style="background: transparent; border:none">
             <div class="card-body ratio ratio-16x9 opacity-75">
@@ -510,7 +618,7 @@
 </div>
 
 <div class="class container-fluid justify-content-center h-5" style="background-color: transparent">
-    <div class="container-lg my-2 d-flex justify-content-center" style="padding-top: 5px; padding-bottom: 10px">
+    <div class="container-lg my-2 d-flex justify-content-center">
         <div class="footer-links fs-3">
             <a class="footer-link" href="{% url 'impressum' %}"><b>Impressum</b></a>
             <a class="footer-link" href="#"><b>Datenschutz</b></a>

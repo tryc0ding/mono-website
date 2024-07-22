@@ -100,15 +100,25 @@ html {
 }
 
 .mainbox{
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.75);
     height: calc(100% + 80px);
     padding-top: 80px
 }
 
 .lastbox{
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.75);
     height: calc(95% + 80px);
     padding-top: 80px
+}
+
+.contact-link {
+    color: rgb(195, 0, 23);
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.contact-link:hover {
+    color: rgb(205, 205, 205);
 }
 
 .map {
