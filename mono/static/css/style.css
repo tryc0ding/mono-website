@@ -109,22 +109,22 @@ html {
 .mainbox{
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.75);
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     padding-top:  calc(var(--navbar-height));
 }
 
 .lastbox{
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.75);
-    min-height: 95%;
+    min-height: 95vh;
     padding-top: calc(var(--navbar-height));
 }
 
 .footerbox{
-    min-height: 5%;
+    min-height: 5vh;
 }
 
 .impressumbox
-    height: 95%;
+    height: 95vh;
 }
 
 .contact-link {
