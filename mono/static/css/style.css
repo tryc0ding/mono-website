@@ -66,8 +66,8 @@ html {
 
 .navbar-logo {
     align-items: center;
-    height: calc(0.6 * var(--navbar-height));
-    weight: calc(0.6 * var(--navbar-height));
+    height: calc(0.50 * var(--navbar-height));
+    weight: calc(0.50 * var(--navbar-height));
 }
 
 .nav-link_active {
