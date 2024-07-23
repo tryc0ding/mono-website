@@ -123,6 +123,10 @@ html {
     min-height: 5%;
 }
 
+.impressumbox
+    height: 95%;
+}
+
 .contact-link {
     color: rgb(195, 0, 23);
     text-decoration: none;
