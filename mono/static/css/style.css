@@ -1,5 +1,5 @@
 :root {
-    --navbar-height: 6vh;
+    --navbar-height: max(5vh, 45px);
 }
 
 html {
@@ -53,14 +53,12 @@ html {
 .navbar-nav .dropdown-toggle {
   color: rgb(195, 0, 23) !important;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: calc(0.50 * var(--navbar-height));
   position: relative;
 }
 
 .navbar-brand {
-  color: rgb(195, 0, 23) !important;
-  font-weight: bold;
-  font-size: 2rem;
+  height: calc(0.50 * var(--navbar-height));
   align-items: center;
 }
 
@@ -72,7 +70,7 @@ html {
 
 .nav-link_active {
   color: rgb(195, 0, 23) !important;
-  font-size: 2rem;
+  font-size: calc(0.50 * var(--navbar-height));
 }
 
 .navbar-nav .nav-link::before,
@@ -126,7 +124,7 @@ html {
 }
 
 .impressumbox
-    height: 95vh;
+    min-height: 95vh;
 }
 
 .contact-link {
